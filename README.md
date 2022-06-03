@@ -1,7 +1,7 @@
 # grafana
 grafana 8.4.3 (b7d2911ca)
 
-# First point
+# First point - CVE-2022-32276
 
 ##Unauthenticated and authenticated users can send a false request for snapshot query using random key parameters, having access to the system dashboard area by going through the login page.
 •	Rated version: 8.4.3 (b7d2911ca)
@@ -30,7 +30,7 @@ Image 3: Unauthenticated access to the dashboard menu
 Image 4: Unauthenticated access to the filter menu
 
 
-# Second point
+# Second point - CVE-2022-32275
 
 ##
 •	Rated version: 8.4.3 (b7d2911ca)
