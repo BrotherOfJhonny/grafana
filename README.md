@@ -1,5 +1,6 @@
 # grafana
-grafana 8.4.3 (b7d2911ca)
+grafana 8.4.3 (b7d2911ca), 
+works on 8.5.5 ( tested for @TheFrenchGhosty )
 
 # First point - CVE-2022-32276
 
