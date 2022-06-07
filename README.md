@@ -35,7 +35,7 @@ Image 4: Unauthenticated access to the filter menu
 ##
 •	Rated version: 8.4.3 (b7d2911ca)
 •	Injection of parameters in http request.
-## It has been verified that by injecting the following request into the login form the system returns internal page.
+## The failure is not a path traversal, but a session control failure. When the traversal path is explored, the authentication system redirects to an internal system page that should only be accessed by authenticated users.
 
 ![image](https://user-images.githubusercontent.com/28454566/171640044-cf2029dc-8598-44f9-87ed-c6c09a152212.png)
 
