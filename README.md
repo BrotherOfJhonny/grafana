@@ -103,6 +103,9 @@ Image 10: Unauthenticated access
 <li>https://cwe.mitre.org/data/definitions/548.html</li>
 <li>https://cwe.mitre.org/data/definitions/706.html</li>
 <li>https://owasp.org/www-pdf-archive/OWASP_SCP_v1.3_pt-BR.pdf</li>
+
+#### Just for information, the failure pointed out generated task 53051 (https://github.com/grafana/grafana/pull/53051) which was completed by the grafana team and ended on 08/01/2022
+<li>https://github.com/grafana/grafana/pull/53051</li>
 </ol>
 
 
